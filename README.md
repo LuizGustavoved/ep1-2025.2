@@ -13,29 +13,33 @@ Desenvolvimento de um sistema de gerenciamento hospitalar utilizando os conceito
 - **Nome completo:** Luiz Gustavo da Conceição Souza
 - **Matrícula:** 242015915
 - **Curso:** Engenharias
-- **Turma:** [Preencher aqui]
+- **Turma:** 02 24M5 24T1
 
 ---
 
 ## Instruções para Compilação e Execução
 
 1. **Compilação:**  
-   [Descrever aqui como compilar o projeto. Exemplo: `javac Main.java` ou o script usado]
+   `javac hospital.terminal.Main.java`
 
 2. **Execução:**  
-   [Descrever aqui como executar o projeto. Exemplo: `java Main` ou o script usado]
+   `java hospital.terminal.Main`
 
 3. **Estrutura de Pastas:**  
-   [Descrever aqui as principais pastas do projeto]
+   - Pasta hopsital: endidade(Consulta, Exame, Internacao, Medicos, Pacientes)
+                   interfac(Medicosinterface, PacienteInterface)                   
+                   servico(Agendamento, AgendamentoExame, GerenciarInternacao)
+                   terminal(Main)  
+                   util(Excecao)  
+ - Pasta out: (consultas.csv) (exames.csv) (internacoes.csv) (medicos.csv) (pacientes.csv) 
 
 3. **Versão do JAVA utilizada:**  
-   [Descrever aqui como versão do JAVA utilizada no projeto. Sugestão: `java 21`]
-
+   - Oracle JDK 24.0.2 (openjdk-24)
 ---
 
 ## Vídeo de Demonstração
 
-- [Inserir o link para o vídeo no YouTube/Drive aqui]
+https://youtu.be/NmCfBb60ygg
 
 ---
 
@@ -43,6 +47,7 @@ Desenvolvimento de um sistema de gerenciamento hospitalar utilizando os conceito
 
 1. Menu Principal:  
    ![Inserir Print 1](caminho/do/print1.png)
+
 
 2. Cadastro de Médico:  
    ![Inserir Print 2](caminho/do/print2.png)
