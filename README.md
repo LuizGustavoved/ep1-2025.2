@@ -65,7 +65,7 @@ https://youtu.be/NmCfBb60ygg
 
 ## Observações (Extras ou Dificuldades)
 
--     Bem, encontrei muitos desafios nesse projeto. Primeiramente fiquei perdido no inicio, pois não fazia como funcionava a linguagem java e ainda mais para orientação a objetos. Então na primeira semana eu tava tentando entender melho como funcionava atributos, métodos e objetos de uma forma geral, com vídeos no youtube. Então eu ia aplicando devagar para ir entendendo na prática e saber como usaria no projeto. Fiquei perdido com git e com gitHub também, nunca tinha usado. Aos poucos o projeto foi criando forma e algumas ideias que eu tive foram boas e outras nem tanto. Acho que no final fico satisfeito com o resultado. Foi ótimo para aprender.
+-     Bem, encontrei muitos desafios nesse projeto. Primeiramente fiquei perdido no inicio, pois não fazia ideia de como funcionava a linguagem java e ainda mais para orientação a objetos.Então na primeira semana eu tava tentando entender melhor como funcionava os atributos, métodos e objetos de uma forma geral, com vídeos no youtube. Então eu ia aplicando devagar para ir entendendo na prática e saber como usaria no projeto. Fiquei perdido com git e com gitHub também, nunca tinha usado. Aos poucos o projeto foi criando forma e algumas ideias que eu tive foram boas e outras nem tanto. Acho que no final fico satisfeito com o resultado. Foi ótimo para aprender.
 
 ---
 
