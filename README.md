@@ -46,14 +46,18 @@ https://youtu.be/NmCfBb60ygg
 ## Prints da Execução
 
 1. Menu Principal:  
-   ![Inserir Print 1](caminho/do/print1.png)
+   <img width="292" height="327" alt="image" src="https://github.com/user-attachments/assets/5ce6ee9c-260a-48a1-8ddb-ffcfe27d2b11" />
 
 
-2. Cadastro de Médico:  
-   ![Inserir Print 2](caminho/do/print2.png)
+2. Cadastro de Paciente:  
+   <img width="539" height="303" alt="image" src="https://github.com/user-attachments/assets/1e34b7b0-84ad-4b80-a0aa-292cd52bea3a" />
 
-3. Relatório de ?:  
-   ![Inserir Print 3](caminho/do/print3.png)
+
+3. Relatório de Consulta:  
+   <img width="688" height="219" alt="image" src="https://github.com/user-attachments/assets/f648e0c1-62cf-42d6-8fef-b3263148323b" />
+   <img width="997" height="87" alt="image" src="https://github.com/user-attachments/assets/f1927e6a-9b1a-4d48-9dfe-3a9821760377" />
+
+
 
 ---
 
