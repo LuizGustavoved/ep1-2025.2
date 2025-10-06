@@ -3,6 +3,7 @@ package hospital.servico;
 import hospital.entidade.Internacao;
 import hospital.entidade.Pacientes;
 import hospital.entidade.Medicos;
+import hospital.servico.CalculadoraPlano;
 import java.time.LocalDate;
 
 import java.util.List;
@@ -14,7 +15,8 @@ public class GerenciarInternacao {
                 throw new IllegalArgumentException("Quarto " + quarto + "está oculpado no momento.");
             }
         }
-        Internacao internacao = new Internacao(paciente, medicoResponsavel, dataEntrada, quarto, custo);
+        double valorFinal = CalculadoraPlano.calcularValorFinal(paciente, custo);
+        Internacao internacao = new Internacao(paciente, medicoResponsavel, dataEntrada, quarto, custo, valorFinal);
         internacoes.add(internacao);
         paciente.adicionarInternacao(internacao);
 

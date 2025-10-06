@@ -251,7 +251,7 @@ public class Main {
                         System.out.println("Nenhuma consulta registrada.");
                     } else {
                         pHistorico.getHistoricoConsultas().forEach(c -> System.out.println(
-                                c.toString() + " | Data: " + c.getDataHorario().format(DATA_HORA)));
+                                c.toString() + " | Data: " + c.getDataHorario().format(DATA_HORA) + " | Valor Final com Desconto: R$ " + String.format("%.2f", c.getValorFinal())));
                     }
                     break;
                 case 2:
@@ -269,7 +269,7 @@ public class Main {
                         System.out.println("Nenhuma internação registrada.");
                     } else {
                         pHistorico.getHistoricoInternacoes().forEach(i -> System.out.println(
-                                i.toString() + " | Entrada: " + i.getDataEntrada().format(DATA)));
+                                i.toString() + " | Entrada: " + i.getDataEntrada().format(DATA) + " | Custo com Desconto: R$ " + String.format("%.2f", i.getValorFinal())));
                     }
                     break;
                 case 0:

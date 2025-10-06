@@ -10,13 +10,15 @@ public class Consulta {
     private String descricao;
     private LocalDateTime dataHorario;
     private StatusConsulta status;
+    private double valorFinal;
 
-    public Consulta(Medicos medico, Pacientes paciente, String descricao, LocalDateTime dataHorario){
+    public Consulta(Medicos medico, Pacientes paciente, String descricao, LocalDateTime dataHorario, double valorFinal){
         this.paciente = paciente;
         this.medico = medico;
         this.descricao = descricao;
         this.dataHorario = dataHorario;
         this.status = StatusConsulta.AGENDADA;
+        this.valorFinal = valorFinal;
 
     }
     public String toCSV(){
@@ -43,6 +45,8 @@ public class Consulta {
     public StatusConsulta getStatus() {
         return status;
     }
+    public double getValorFinal() {
+        return valorFinal;}
     public String toString(){
         return "Consulta com: " + medico.getNome() + " | Paciente: " + paciente.getNome() + " em " + dataHorario + " para " + descricao + " está " + status;
     }

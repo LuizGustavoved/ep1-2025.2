@@ -46,15 +46,15 @@ Desenvolvimento de um sistema de gerenciamento hospitalar utilizando os conceito
 
 ## Prints da Execução
 
-1. Menu Principal:  ![menu.png](menu.png)
-   ![]()
 
-2. Cadastro de Médico:  
-   ![]()
+1. Menu Principal: 
+2. ![img_1.png](img_1.png)
+   
+3. Cadastro de Médico: ![img_2.png](img_2.png) 
 
-3. Relatório de ?:  ![img.png](img.png)
-   ![]()
 
+4. Relatório de Paciente:  ![img.png](img.png)
+   
 ---
 
 ---

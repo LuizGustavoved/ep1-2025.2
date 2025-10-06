@@ -76,6 +76,13 @@ public class Pacientes implements PacienteInterface {
 
         return Collections.unmodifiableList(exames);
     }
+    private boolean possuiPlano = false;
+    public void ativarPlanoSaude() {
+        this.possuiPlano = true;
+    }
+    public boolean possuiPlano() {
+        return possuiPlano;
+    }
 
     public String toString(){
         return " Paciente: "+  nome  + " |CPF: " +  cpf  + " |Idade: " +  idade  + " anos " + " |Identificação: " +  id;

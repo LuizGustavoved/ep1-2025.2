@@ -123,16 +123,24 @@ public class PersistenciaDados {
             reader.readLine();
             while ((linha = reader.readLine()) != null) {
                 String[] dados = linha.split(",");
-                if (dados.length == 5) {
+                if (dados.length >= 5) {
                     Pacientes paciente = buscarPacientePorCpf(pacientes, dados[0].trim());
                     Medicos medico = buscarMedicoPorCrm(medicos, dados[1].trim());
                     if (paciente != null && medico != null) {
                         LocalDate dataEntrada = LocalDate.parse(dados[2].trim());
                         double custo = Double.parseDouble(dados[3].trim());
                         String quarto = dados[4].trim();
-                        Internacao i = new Internacao(paciente, medico, dataEntrada, quarto, custo);
+                        double valorFinal = custo;
+                        if (dados.length > 5){
+                            valorFinal = Double.parseDouble(dados[5].trim());
+                        }
+                        Internacao i = new Internacao(paciente, medico, dataEntrada, quarto, custo, valorFinal);
                         internacoes.add(i);
                         paciente.adicionarInternacao(i);
+                        if (dados.length > 6){
+                            LocalDate dataBaixa = LocalDate.parse(dados[6].trim());
+                            i.liberarInternacao(dataBaixa);
+                        }
                     }
                 }
             }
@@ -148,16 +156,21 @@ public class PersistenciaDados {
             reader.readLine();
             while ((linha = reader.readLine()) != null) {
                 String[] dados = linha.split(",");
-                if (dados.length == 5) {
+                if (dados.length >= 6) {
                     Pacientes paciente = buscarPacientePorCpf(pacientes, dados[0].trim());
                     Medicos medico = buscarMedicoPorCrm(medicos, dados[1].trim());
                     if (paciente != null && medico != null) {
                         String descricao = dados[2].trim();
                         LocalDateTime dataHora = LocalDateTime.parse(dados[3].trim());
                         StatusConsulta status = StatusConsulta.valueOf(dados[4].trim());
-                        Consulta c = new Consulta(medico, paciente, descricao, dataHora);
+                        double valorFinal = Double.parseDouble(dados[5].trim());
+                        Consulta c = new Consulta(medico, paciente, descricao, dataHora, valorFinal);
                         if (status != StatusConsulta.AGENDADA) {
-
+                        }
+                        if (status == StatusConsulta.CONCLUIDA) {
+                            c.concluirConsulta();
+                        } else if (status == StatusConsulta.CANCELADA) {
+                            c.cancelarConsulta();
                         }
                         paciente.adicionarConsulta(c);
                         medico.adicionarConsulta(c);

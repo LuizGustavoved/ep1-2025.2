@@ -10,14 +10,16 @@ public class Internacao {
     private String quarto;
     private double custo;
     private boolean ativa;
+    private double valorFinal;
 
-    public Internacao(Pacientes paciente, Medicos medicoResponsavel, LocalDate dataEntrada, String quarto, double custo) {
+    public Internacao(Pacientes paciente, Medicos medicoResponsavel, LocalDate dataEntrada, String quarto, double custo, double valorFinal) {
         this.paciente = paciente;
         this.medicoResponsavel = medicoResponsavel;
         this.dataEntrada = dataEntrada;
         this.quarto = quarto;
         this.custo = custo;
         this.ativa = true;
+        this.valorFinal = valorFinal;
     }
 
     public void liberarInternacao(LocalDate dataBaixa) {
@@ -54,6 +56,8 @@ public class Internacao {
     public Pacientes getPaciente() {
         return paciente;
     }
+    public double getValorFinal() {
+        return valorFinal;}
     public String toString(){
         return "Situação da internação do paciente:" + paciente.getNome() + " no quarto:" + quarto + " no dia: " + dataEntrada + " Valor: R$ " + String.format("%.2f", custo);
     }
