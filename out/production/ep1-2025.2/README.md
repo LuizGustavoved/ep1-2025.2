@@ -27,13 +27,6 @@ Desenvolvimento de um sistema de gerenciamento hospitalar utilizando os conceito
 
 3. **Estrutura de Pastas:**  
  - Pasta hopsital: endidade(Consulta, Exame, Internacao, Medicos, Pacientes)
-   `javac hospital.terminal.Main.java`
-
-2. **Execução:**  
-   `java hospital.terminal.Main`
-
-3. **Estrutura de Pastas:**  
-   - Pasta hopsital: endidade(Consulta, Exame, Internacao, Medicos, Pacientes)
                    interfac(Medicosinterface, PacienteInterface)                   
                    servico(Agendamento, AgendamentoExame, GerenciarInternacao)
                    terminal(Main)  
@@ -43,33 +36,24 @@ Desenvolvimento de um sistema de gerenciamento hospitalar utilizando os conceito
 3. **Versão do JAVA utilizada:**  
    - Oracle JDK 24.0.2 (openjdk-24)
 
- - Pasta out: (consultas.csv) (exames.csv) (internacoes.csv) (medicos.csv) (pacientes.csv) 
-
-3. **Versão do JAVA utilizada:**  
-   - Oracle JDK 24.0.2 (openjdk-24)
 ---
 
 ## Vídeo de Demonstração
 
-https://youtu.be/NmCfBb60ygg
+- [Inserir o link para o vídeo no YouTube/Drive aqui]
 
 ---
 
 ## Prints da Execução
 
 1. Menu Principal:  
-   <img width="292" height="327" alt="image" src="https://github.com/user-attachments/assets/5ce6ee9c-260a-48a1-8ddb-ffcfe27d2b11" />
+   ![Inserir Print 1](caminho/do/print1.png)
 
+2. Cadastro de Médico:  
+   ![Inserir Print 2](caminho/do/print2.png)
 
-2. Cadastro de Paciente:  
-   <img width="539" height="303" alt="image" src="https://github.com/user-attachments/assets/1e34b7b0-84ad-4b80-a0aa-292cd52bea3a" />
-
-
-3. Relatório de Consulta:  
-   <img width="688" height="219" alt="image" src="https://github.com/user-attachments/assets/f648e0c1-62cf-42d6-8fef-b3263148323b" />
-   <img width="997" height="87" alt="image" src="https://github.com/user-attachments/assets/f1927e6a-9b1a-4d48-9dfe-3a9821760377" />
-
-
+3. Relatório de ?:  
+   ![Inserir Print 3](caminho/do/print3.png)
 
 ---
 
@@ -78,7 +62,6 @@ https://youtu.be/NmCfBb60ygg
 ## Observações (Extras ou Dificuldades)
 
     Bem, encontrei muitos desafios nesse projeto. Primeiramente fiquei perdido no inicio, pois não fazia como funcionava a linguagem java e ainda mais para orientação a objetos. Então na primeira semana eu tava tentando entender melho como funcionava atributos, métodos e objetos de uma forma geral, com vídeos no youtube. Então eu ia aplicando devagar para ir entendendo na prática e saber como usaria no projeto. Fiquei perdido com git e com gitHub também, nunca tinha usado. Aos poucos o projeto foi criando forma e algumas ideias que eu tive foram boas e outras nem tanto. Acho que no final fico satisfeito com o resultado. Foi ótimo para aprender.
--     Bem, encontrei muitos desafios nesse projeto. Primeiramente fiquei perdido no inicio, pois não fazia ideia de como funcionava a linguagem java e ainda mais para orientação a objetos.Então na primeira semana eu tava tentando entender melhor como funcionava os atributos, métodos e objetos de uma forma geral, com vídeos no youtube. Então eu ia aplicando devagar para ir entendendo na prática e saber como usaria no projeto. Fiquei perdido com git e com gitHub também, nunca tinha usado. Aos poucos o projeto foi criando forma e algumas ideias que eu tive foram boas e outras nem tanto. Acho que no final fico satisfeito com o resultado. Foi ótimo para aprender.
 
 ---
 
